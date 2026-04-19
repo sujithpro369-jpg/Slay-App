@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slay Programming Language</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="halo halo-a"></div>
+    <div class="halo halo-b"></div>
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">
+          <span class="logo-mark">S</span>
+          <span>Slay</span>
+        </div>
+        <a href="#download" class="nav-link">Download</a>
+      </nav>
+
+      <section class="hero-content">
+        <p class="eyebrow">ORIGINAL PROGRAMMING LANGUAGE</p>
+        <h1>Slay turns code into a stage.</h1>
+        <p class="hero-copy">
+          Slay is a fresh scripting language with a custom editor, `.sly` scripts, fast run panels,
+          commandbook help, and a visual coding experience built for creators who want their tooling
+          to feel alive.
+        </p>
+        <div class="hero-actions">
+          <a id="download" class="primary-btn" href="./downloads/Slay-Setup.exe" download>Download for Windows</a>
+          <a class="ghost-btn" href="#language">Explore the language</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="language" class="section feature-grid">
+        <article class="feature-card">
+          <h2>Own Syntax</h2>
+          <p>
+            Slay uses its own keyword voice: `say`, `stash`, `spark`, `send`, `loop`, and more.
+            It feels readable, quick, and expressive without cloning another language.
+          </p>
+        </article>
+        <article class="feature-card">
+          <h2>Desktop Studio</h2>
+          <p>
+            Multi-tab scripts, output panel, local save/open support, visual settings, and a command
+            index are built directly into the app.
+          </p>
+        </article>
+        <article class="feature-card">
+          <h2>.sly Files</h2>
+          <p>
+            Create scripts, save them to your machine, reopen them later, and build your own Slay
+            code library.
+          </p>
+        </article>
+      </section>
+
+      <section class="section showcase">
+        <div>
+          <p class="eyebrow">WHY SLAY</p>
+          <h2>For coding that looks sharp and feels distinct.</h2>
+          <p>
+            The current release ships as a working first version of the language runtime and editor.
+            It is designed to grow into a bigger ecosystem with richer packages, deeper syntax, and
+            stronger compile/runtime features.
+          </p>
+        </div>
+        <pre class="code-sample"><code>say "Slay is online"
+stash level = 3
+
+spark crown(name):
+  say "Welcome, " + name
+
+crown("Builder")
+
+loop 2:
+  say "Encore"</code></pre>
+      </section>
+
+      <section class="section commandbook">
+        <p class="eyebrow">COMMANDS</p>
+        <h2>Built-in Slay language guide</h2>
+        <div class="command-list">
+          <div><strong>say</strong><span>Print output</span><code>say "hi"</code></div>
+          <div><strong>stash</strong><span>Create a variable</span><code>stash score = 99</code></div>
+          <div><strong>spark</strong><span>Create a function</span><code>spark greet(person):</code></div>
+          <div><strong>/help</strong><span>Show the keyword list</span><code>/help</code></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Deploy this site on Vercel. Replace the installer file in `Website/downloads/` when you generate a new build.</p>
+    </footer>
+  </body>
+</html>
